@@ -1,0 +1,296 @@
+/* định dạng cho button */
+
+
+
+
+#myBtn {
+    display: none;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 99;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    background-color: rgba(0, 110, 255, 0.736);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.7s ease-out;
+
+
+}
+
+#zaloBtn {
+    display: block;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    animation-name: shake;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+#myBtn:hover {
+    background-color: #5b98beae;
+}
+
+#Slider {
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.337);
+    overflow: hidden;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 40%;
+    /* chiều cao của slide */
+    transition: 0.6s;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#myContact {
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(57, 143, 255);
+    color: white;
+    padding: 15px;
+    transition: 0.7s ease-out;
+
+}
+
+@media (max-width: 800px) {
+
+
+    .aspect-ratio-169 {
+        display: block;
+        position: relative;
+        padding-top: 60%;
+        /* chiều cao của slide */
+        transition: 0.6s;
+    }
+
+
+
+
+
+}
+
+
+@media (min-width: 800px) {
+
+    #myBtn {
+        display: none;
+        /* Mặc định button sẽ được ẩn*/
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+        z-index: 99;
+        /* button được ưu tiên hiển thị đè lên các phần khác*/
+        border: none;
+        outline: none;
+        background-color: rgba(0, 110, 255, 0.736);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        transition: 0.7s ease-out;
+    }
+#zaloBtn {
+    display: block;
+    /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    animation-name: shake;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+
+}
+    #myBtn:hover {
+        background-color: #5b98beae;
+    }
+
+    #myContact {
+        display: none;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: rgb(57, 143, 255);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        transition: 0.7s ease-out;
+
+    }
+
+    .black-background {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 80px;
+        right: 0;
+        z-index: -1;
+        display: none;
+        transition: 0.7s ease-in-out;
+    }
+
+    .group:hover+.black-background {
+        display: block;
+    }
+
+    .group:hover img {
+        transform: scale(1.5);
+        filter: brightness(75%);
+        transition: transform 0.7s ease;
+    }
+
+    #search-box {
+        border-radius: 30px;
+    }
+
+    #search-box #search-text {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 15px;
+        width: 0;
+        padding: 0;
+        transition: all 1s ease-in-out;
+        transition-delay: 1s;
+    }
+
+    #search-box:hover {
+        background-color: #fff;
+    }
+
+    #search-box:hover #search-text {
+        width: 200px;
+        padding: 10px 0px 10px 10px;
+        transition: all 0.7s ease-in-out;
+    }
+
+    #search-box:hover #button {
+        display: none;
+    }
+
+    #search-box #search-btn {
+        transition: all 1s ease-in-out;
+        transition-delay: 0.9s;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+
+    #search-box:hover #search-btn {
+        transform: rotate(360deg);
+        transition-delay: 0s;
+    }
+
+    #Slider {
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.337);
+        overflow: hidden;
+    }
+
+    .aspect-ratio-169 {
+        display: block;
+        position: relative;
+        padding-top: 40%;
+        /* chiều cao của slide */
+        transition: 0.6s;
+    }
+
+    .aspect-ratio-169 img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+
+
+    .right_slider {
+        right: 9%;
+        top: 100px;
+        position: absolute;
+        width: 300px;
+        height: 100%;
+    }
+
+
+
+    .left_slider {
+        top: 100px;
+        position: absolute;
+        width: 300px;
+        height: 100%;
+
+    }
+
+}
