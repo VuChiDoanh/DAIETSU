@@ -75,9 +75,9 @@
                         <a href="#!/tin-tuc"
                             class="font-medium md:block py-6 px-2 md:px-6 hover:text-sky-500 font-medium">Bài Viết</a>
                     </li>
-                    <div class="  inline-block group hover:text-sky-500 ">
+                    <div class="  inline-block group group1 hover:text-sky-500 ">
                         <li class="">
-                            <a class="md:block py-6 px-2 md:px-6  font-medium" href="#!/may-loc-nuoc">Sản Phẩm</a>
+                            <a class="md:block py-6 px-2 md:px-6  font-medium" href="#!/may-loc-nuoc">Máy Lọc Nước</a>
                         </li>
                         <div
                             class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-md lg:group-hover:block  grid grid-cols-2">
@@ -137,12 +137,38 @@
                         </div>
                     </div>
                     <div class="hidden top-[83px] md:fixed w-full h-full black-background"></div>
-                    <!-- 
-                    <li>
-                        <a href="#!/tin-tuc"
-                            class="font-medium md:block py-6 px-2 md:px-6 hover:text-sky-500 font-medium">Đối Tác</a>
-                    </li> 
-                -->
+                    <div class="  inline-block group hover:text-sky-500 ">
+                        <li class="">
+                            <a class="md:block py-6 px-2 md:px-6  font-medium" href="#!/may-loc-nuoc">Dịch Vụ</a>
+                        </li>
+                        <div
+                            class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-md lg:group-hover:block  grid grid-cols-2">
+                            <div class="">
+                                <p href="#"
+                                    class="font-semibold text-2xl ml-36 w-[250px] border-black block px-4 py-6 ">Du lịch
+                                </p>
+                                <a href="#!/may-loc-nuoc/may-loc-nuoc-kiem-HU-150"
+                                    class="font-medium ml-40 w-[300px] border-black block px-4 py-6 hover:text-sky-500  hover:border-b-2">Du lịch khám bệnh</a>
+                                <a href="#!/may-loc-nuoc/may-loc-nuoc-kiem-NDX-360PLW"
+                                    class="font-medium ml-40 w-[300px] border-black block px-4 py-6 hover:text-sky-500  hover:border-b-2">Du lịch VIP</a>
+                                <a href="#!/may-loc-nuoc/may-loc-nuoc-kiem-NDX-360PLW"
+                                class="font-medium ml-40 w-[300px] border-black block px-4 py-6 hover:text-sky-500  hover:border-b-2">Tour Nhật Bản</a>
+                                
+                            </div>
+                            <div class="fixed top-[82px] left-1/4">
+                                <p href="#!/may-loc-nuoc"
+                                    class="font-semibold text-2xl ml-36 w-[250px] border-black block px-4 py-6 ">Dịch vụ khác
+                                </p>
+                                <a href="#!/may-loc-nuoc/loi-loc-OC-1000"
+                                    class="font-medium ml-40 w-[250px] border-black block px-4 py-6 hover:text-sky-500  hover:border-b-2">Đặt hàng xách tay</a>
+                                <a href="#!/may-loc-nuoc/loi-loc-HUR-K"
+                                    class="font-medium ml-40 w-[250px] border-black block px-4 py-6 hover:text-sky-500  hover:border-b-2">Hỗ trợ visa</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="hidden top-[83px] md:fixed w-full h-full black-background"></div>
+
 
 
                 </ul>
@@ -413,22 +439,6 @@
     }
 
 
-
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownBackground = document.querySelector('.dark-overlay');
-
-    dropdown.addEventListener('mouseenter', function () {
-        dropdownBackground.classList.add('active');
-    });
-
-    dropdown.addEventListener('mouseleave', function () {
-        dropdownBackground.classList.remove('active');
-    });
-
-    dropdownBackground.addEventListener('click', function () {
-        dropdown.classList.remove('group-hover:block');
-        dropdownBackground.classList.remove('active');
-    });
     $scope.scrollUp = function () {
         var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 

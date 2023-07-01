@@ -290,7 +290,7 @@ window.HomeController = function ($scope, $location) {
     // _________________________________________________
 
     $scope.soSanPhamHienThi = function() {
-        return 8;
+        return 4;
     };
 
     const groups = document.querySelectorAll("div.group");
