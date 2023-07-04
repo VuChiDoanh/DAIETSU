@@ -9,7 +9,7 @@
     <title>DAIETSU - Trang chủ</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="libs/angular.min.js"></script>
     <script src="libs/angular-route.min.js"></script>
     <script src="controllers/HomeController.js"></script>
@@ -176,7 +176,7 @@
 
 
 
-        <div ng-view>
+        <div ng-view class="bg-gray-100">
 
         </div>
 
@@ -199,7 +199,7 @@
             Gọi ngay: <a href="tel:(+81) 0489-762-3375" class="ml-2 md:text-lg font-medium">
                 (+81) 0489-762-3375</a>
         </button> -->
-        <section class="bg-sky-600 text-white pb-8">
+        <section class="bg-gradient-to-b from-gray-700  to-gray-900 text-white pb-8">
             <div class="mx-auto px-5 pt-10 relative">
                 <div class="grid md:grid-cols-2 gap-3">
                     <div class="w-2/3">
@@ -268,7 +268,7 @@
 </body>
 <script>
 
-    angular.module('app-route', ['ngRoute']).config(function ($routeProvider, $locationProvider, $logProvider, $provide) {
+    angular.module('app-route', ['ngRoute']).config(function ($routeProvider) {
         $routeProvider.when('/home', {
             templateUrl: 'views/home.html',
             controller: HomeController,
@@ -307,10 +307,10 @@
                 templateUrl: 'views/du-lich-kham-benh.html',
                 controller: TinTucController,
             })
-            // .when('/tin-tuc/du-lich-vip', {
-            //     templateUrl: 'views/du-lich-vip.html',
-            //     controller: TinTucController,
-            // })
+            .when('/tin-tuc/du-lich-vip', {
+                templateUrl: 'views/du-lich-vip.html',
+                controller: TinTucController,
+            })
             .when('/tin-tuc/dich-vu-visa', {
                 templateUrl: 'views/dich-vu-visa.html',
                 controller: TinTucController,
