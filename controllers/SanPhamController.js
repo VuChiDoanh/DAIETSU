@@ -229,9 +229,31 @@ window.SanPhamController = function ($scope, $routeParams) {
             document.body.scrollTop = distanceToScroll;
         }
     }
+    let apiUrl = "https://doanh-learn-api.onrender.com/takei";
+    $scope.count = 1;
+    $scope.countPlus = function(){
+        $scope.count++
+        let xemThem = document.getElementById("countSP");
+        if($scope.count%2 == 0){
 
+            xemThem.innerHTML = "Ẩn bớt";
+        }
+        else{
+            xemThem.innerHTML = "Xem thêm";
+        }
+    }
+    
 
-
+    $scope.soSanPhamHienThi = function() {
+        if($scope.count%2 == 0){
+            return 11;
+        }
+        else{
+            return 4;
+        }
+        
+    };
+    
 
 
 

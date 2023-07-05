@@ -1,17 +1,6 @@
 window.HomeController = function ($scope, $location, $http) {
     $location.path('/home')
-    document.title = 'Trang Chủ';
-    let apiUrl = "https://doanh-learn-api.onrender.com/takei";
-    $scope.getData = function () {
-        $http.get(apiUrl).then(function (response) {
-            console.log(response)
-            if (response.status == 200) {
-                $scope.danhsach = response.data;
-            }
-        })
-    }
-    $scope.getData();
-
+    
 
 
 
@@ -94,9 +83,7 @@ window.HomeController = function ($scope, $location, $http) {
     });
     // _________________________________________________
 
-    $scope.soSanPhamHienThi = function() {
-        return 4;
-    };
+
 
     const groups = document.querySelectorAll("div.group");
     groups.forEach(function (group) {
@@ -106,6 +93,7 @@ window.HomeController = function ($scope, $location, $http) {
                     menu.classList.remove("space-y-8")
                 }
                 window.requestAnimationFrame(scrollUp);
+                
             });
         });
         

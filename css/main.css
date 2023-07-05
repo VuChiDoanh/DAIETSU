@@ -13,7 +13,7 @@
     /* button được ưu tiên hiển thị đè lên các phần khác*/
     border: none;
     outline: none;
-    background-color: rgba(0, 110, 255, 0.736);
+    background-color: rgba(248, 228, 9, 0.736);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -138,7 +138,7 @@
         /* button được ưu tiên hiển thị đè lên các phần khác*/
         border: none;
         outline: none;
-        background-color: rgba(0, 110, 255, 0.736);
+        background-color: rgba(255, 187, 0, 0.807);
         color: white;
         cursor: pointer;
         padding: 15px;
@@ -166,7 +166,7 @@
 
 }
     #myBtn:hover {
-        background-color: #5b98beae;
+        background-color:  rgb(203, 149, 0);
     }
 
     #myContact {
@@ -192,7 +192,7 @@
         right: 0;
         z-index: -1;
         display: none;
-        transition: 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
     }
 
     .group:hover+.black-background {
@@ -201,7 +201,7 @@
 
     .group:hover img {
         transform: scale(1.5);
-        filter: brightness(75%);
+        filter: brightness(70%);
         transition: transform 0.7s ease;
     }
 

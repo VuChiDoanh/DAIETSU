@@ -38,12 +38,12 @@
                     <div class="flex items-baseline my-auto my-3">
                         <p class="hidden xl:flex text-lg font-semibold  items-baseline mr-3">
                             Liên hệ - (+81) 0489-762-3375</p>
-                        <form action="" method="" id="search-box" class=" hidden xl:flex">
+                        <!-- <form action="" method="" id="search-box" class=" hidden xl:flex">
                             <input type="hidden" name="">
                             <input type="text" name="" id="search-text" placeholder="Tìm kiếm...">
                             <button type="submit" onclick="" id="search-btn"><i
                                     class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
                 <div class="md:hidden absolute top-7 right-4" id="menu-icon">
@@ -59,21 +59,22 @@
                     id="menu">
                     <li>
                         <a href="#!/home"
-                            class="font-medium md:block py-6 px-2 md:px-6 hover:text-sky-500 font-medium">Trang
+                            class="font-medium md:block py-6 px-2 md:px-6 hover:text-amber-500 text-lg">Trang
                             Chủ</a>
                     </li>
 
 
                     <li>
                         <a href="#!/tin-tuc"
-                            class="font-medium md:block py-6 px-2 md:px-6 hover:text-sky-500 font-medium">Bài Viết</a>
+                            class="font-medium md:block py-6 px-2 md:px-6 hover:text-amber-500 text-lg">Bài Viết</a>
                     </li>
-                    <div class="  inline-block group group1 hover:text-sky-500 ">
+                    <div class="  inline-block group group1 hover:text-amber-500 w-[100%] md:w-auto">
                         <li class="">
-                            <a class="md:block py-6 px-2 md:px-6  font-medium" href="#!/may-loc-nuoc">Máy Lọc Nước</a>
+                            <a class="md:block py-6 px-2 md:px-6  font-medium text-lg" href="#!/osg-water">Máy Lọc
+                                Nước</a>
                         </li>
                         <div
-                            class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-md lg:group-hover:block  grid grid-cols-2">
+                            class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20  rounded-b-xl lg:group-hover:block  grid grid-cols-2">
                             <div class="">
                                 <p href="#"
                                     class="font-semibold text-2xl ml-36 w-[250px] border-black block px-4 py-6 ">Máy Lọc
@@ -130,12 +131,12 @@
                         </div>
                     </div>
                     <div class="hidden top-[83px] md:fixed w-full h-full black-background"></div>
-                    <div class="  inline-block group hover:text-sky-500 ">
+                    <div class="  inline-block group hover:text-amber-500 ">
                         <li class="">
-                            <a class="md:block py-6 px-2 md:px-6  font-medium" href="#DichVu">Dịch Vụ</a>
+                            <p class="md:block py-6 px-2 md:px-6  font-medium text-lg" id="btnDichVu">Dịch Vụ</p>
                         </li>
                         <div
-                            class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-md lg:group-hover:block  grid grid-cols-2">
+                            class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-b-xl lg:group-hover:block  grid grid-cols-2">
                             <div class="">
                                 <p href="#"
                                     class="font-semibold text-2xl ml-36 w-[250px] border-black block px-4 py-6 ">Du lịch
@@ -199,7 +200,7 @@
             Gọi ngay: <a href="tel:(+81) 0489-762-3375" class="ml-2 md:text-lg font-medium">
                 (+81) 0489-762-3375</a>
         </button> -->
-        <section class="bg-gradient-to-b from-gray-700  to-gray-900 text-white pb-8">
+        <section class="bg-gradient-to-b from-gray-700 via-gray-800  to-gray-950 text-white pb-8">
             <div class="mx-auto px-5 pt-10 relative">
                 <div class="grid md:grid-cols-2 gap-3">
                     <div class="w-2/3">
@@ -275,6 +276,9 @@
         }).when('/', {
             templateUrl: 'views/home.html',
             controller: HomeController,
+        }).when('/osg-water', {
+            templateUrl: 'views/OSG.html',
+            controller: SanPhamController,
         }).when('/may-loc-nuoc', {
             templateUrl: 'views/may-loc.html',
             controller: SanPhamController,
@@ -345,6 +349,7 @@
 
         }
     });
+
     // chuyển trang
     links.forEach(function (link) {
         link.addEventListener("click", function () {
@@ -353,10 +358,19 @@
                 menu.classList.remove("space-y-8")
             }
             window.requestAnimationFrame(scrollUp);
+            
         });
     });
 
-
+    let btnDichVu = document.getElementById("btnDichVu")
+            btnDichVu.addEventListener("click", function () {
+                var dichVu = document.getElementById("dichVu");
+                if (dichVu) {
+                    dichVu.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            });
 
     var zaloBtn = document.getElementById("zaloBtn");
 
