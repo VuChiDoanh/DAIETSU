@@ -142,7 +142,7 @@ window.SanPhamController = function ($scope, $routeParams) {
                 3: "images/NDX-3000LMW-mota4.png",
 
             },
-            
+
 
         },
         {
@@ -159,7 +159,7 @@ window.SanPhamController = function ($scope, $routeParams) {
 
 
             },
-            
+
 
         },
         {
@@ -214,7 +214,7 @@ window.SanPhamController = function ($scope, $routeParams) {
 
 
 
-    $scope.scrollUp = function (){
+    $scope.scrollUp = function () {
         var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
         // Nếu vị trí scroll lớn hơn 0
@@ -229,37 +229,34 @@ window.SanPhamController = function ($scope, $routeParams) {
             document.body.scrollTop = distanceToScroll;
         }
     }
-    let apiUrl = "https://doanh-learn-api.onrender.com/takei";
     $scope.count = 1;
-    $scope.countPlus = function(){
+    $scope.countPlus = function () {
         $scope.count++
         let xemThem = document.getElementById("countSP");
-        if($scope.count%2 == 0){
+        if ($scope.count % 2 == 0) {
 
             xemThem.innerHTML = "Ẩn bớt";
         }
-        else{
+        else {
             xemThem.innerHTML = "Xem thêm";
         }
     }
-    
 
-    $scope.soSanPhamHienThi = function() {
-        if($scope.count%2 == 0){
+
+    $scope.soSanPhamHienThi = function () {
+        if ($scope.count % 2 == 0) {
             return 11;
         }
-        else{
+        else {
             return 4;
         }
-        
+
     };
-    
 
 
 
 
 
 
-    
 
 }

@@ -37,7 +37,7 @@
                     </a>
                     <div class="flex items-baseline my-auto my-3">
                         <p class="hidden xl:flex text-lg font-semibold  items-baseline mr-3">
-                            Liên hệ - (+81) 0489-762-3375</p>
+                            Liên hệ (+81) 0489-762-3375</p>
                         <!-- <form action="" method="" id="search-box" class=" hidden xl:flex">
                             <input type="hidden" name="">
                             <input type="text" name="" id="search-text" placeholder="Tìm kiếm...">
@@ -133,7 +133,7 @@
                     <div class="hidden top-[83px] md:fixed w-full h-full black-background"></div>
                     <div class="  inline-block group hover:text-amber-500 ">
                         <li class="">
-                            <p class="md:block py-6 px-2 md:px-6  font-medium text-lg" id="btnDichVu">Dịch Vụ</p>
+                            <a href="#!/dich-vu" class="md:block py-6 px-2 md:px-6  font-medium text-lg" id="btnDichVu">Dịch Vụ</a>
                         </li>
                         <div
                             class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-b-xl lg:group-hover:block  grid grid-cols-2">
@@ -203,7 +203,7 @@
         <section class="bg-gradient-to-b from-gray-700 via-gray-800  to-gray-950 text-white pb-8">
             <div class="mx-auto px-5 pt-10 relative">
                 <div class="grid md:grid-cols-2 gap-3">
-                    <div class="w-2/3">
+                    <div class="w-[100%]">
                         <div class="flex items-center">
                             <img src="images/logo-white.png" class="w-[150px] md:w-[200px]" alt="logo" />
                             <img src="images/logoOSG.png" class=" mx-8 w-[150px] md:w-[180px]" alt="logo" />
@@ -288,7 +288,12 @@
         }).when('/tin-tuc', {
             templateUrl: 'views/tin-tuc.html',
             controller: TinTucController,
-        }).when('/tin-tuc/tai-sao-nen-su-dung-nuoc-kiem', {
+        })
+        .when('/dich-vu', {
+            templateUrl: 'views/dich-vu.html',
+            controller: TinTucController,
+        })
+        .when('/tin-tuc/tai-sao-nen-su-dung-nuoc-kiem', {
             templateUrl: 'views/tai-sao-nen-su-dung-nuoc-kiem.html',
             controller: TinTucController,
         }).when('/tin-tuc/tap-doan-OSG', {
