@@ -1,5 +1,6 @@
 window.HomeController = function ($scope, $location, $http) {
     $location.path('/home')
+    document.title = 'Daietsu - Trang chủ';
     
 
 

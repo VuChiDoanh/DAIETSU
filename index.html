@@ -15,8 +15,7 @@
     <script src="controllers/HomeController.js"></script>
     <script src="controllers/SanPhamController.js"></script>
     <script src="controllers/TinTucController.js"></script>
-    <script src="controllers/ContactController.js"></script>
-    <script src="controllers/PartnersController.js"></script>
+    <script src="controllers/DichVuController.js"></script>
     <script src="controllers/ChiTietController.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -291,7 +290,7 @@
         })
         .when('/dich-vu', {
             templateUrl: 'views/dich-vu.html',
-            controller: TinTucController,
+            controller: DichVuController,
         })
         .when('/tin-tuc/tai-sao-nen-su-dung-nuoc-kiem', {
             templateUrl: 'views/tai-sao-nen-su-dung-nuoc-kiem.html',
@@ -312,17 +311,17 @@
             templateUrl: 'views/chinh-sach-bao-mat.html',
             controller: TinTucController,
         })
-            .when('/tin-tuc/du-lich-kham-benh', {
+            .when('/dich-vu/du-lich-kham-benh', {
                 templateUrl: 'views/du-lich-kham-benh.html',
-                controller: TinTucController,
+                controller: DichVuController,
             })
-            .when('/tin-tuc/du-lich-vip', {
+            .when('/dich-vu/du-lich-vip', {
                 templateUrl: 'views/du-lich-vip.html',
-                controller: TinTucController,
+                controller: DichVuController,
             })
-            .when('/tin-tuc/dich-vu-visa', {
+            .when('/dich-vu/dich-vu-visa', {
                 templateUrl: 'views/dich-vu-visa.html',
-                controller: TinTucController,
+                controller: DichVuController,
             }).when('/404', {
                 templateUrl: 'views/404.html',
             }).otherwise({
@@ -379,6 +378,7 @@
 
     var zaloBtn = document.getElementById("zaloBtn");
 
+
     function shake() {
         var x = Math.random() * 10 - 5; // Tạo một giá trị ngẫu nhiên từ -5 đến 5 cho vị trí x
         var y = Math.random() * 10 - 5; // Tạo một giá trị ngẫu nhiên từ -5 đến 5 cho vị trí y
@@ -390,7 +390,6 @@
     }
 
     shake();
-
 
 
 

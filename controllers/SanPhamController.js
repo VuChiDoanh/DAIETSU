@@ -1,5 +1,5 @@
 window.SanPhamController = function ($scope, $routeParams) {
-    document.title = 'Danh Sách Sản Phẩm';
+    document.title = 'OSG Water';
 
     $scope.sapxep = 'Sắp xếp';
 
