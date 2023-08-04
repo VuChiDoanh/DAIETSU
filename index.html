@@ -319,6 +319,10 @@
                 templateUrl: 'views/du-lich-vip.html',
                 controller: DichVuController,
             })
+            .when('/dich-vu/chuyen-phat', {
+                templateUrl: 'views/chuyen-phat.html',
+                controller: DichVuController,
+            })
             .when('/dich-vu/dich-vu-visa', {
                 templateUrl: 'views/dich-vu-visa.html',
                 controller: DichVuController,
@@ -334,7 +338,7 @@
 
     const menuIcon = document.querySelector("#menu-icon");
     const menu = document.querySelector("#menu");
-    const links = document.querySelectorAll("a");
+    
 
 
     // Event
@@ -355,6 +359,7 @@
     });
 
     // chuyển trang
+    const links = document.querySelectorAll("a");
     links.forEach(function (link) {
         link.addEventListener("click", function () {
             if (isMenuOpen) {
