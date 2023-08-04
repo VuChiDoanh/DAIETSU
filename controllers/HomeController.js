@@ -41,7 +41,7 @@ window.HomeController = function ($scope, $location, $http) {
     leftSlider.addEventListener("click", function () {
         index--;
         if (index >= imgNumber || index < 0) {
-            index = 2 // số lượng ảnh -1 
+            index = 3 // số lượng ảnh -1 
         }
         slider(index)
     })
