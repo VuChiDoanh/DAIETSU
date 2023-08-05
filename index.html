@@ -132,7 +132,8 @@
                     <div class="hidden top-[83px] md:fixed w-full h-full black-background"></div>
                     <div class="  inline-block group hover:text-amber-500 ">
                         <li class="">
-                            <a href="#!/dich-vu" class="md:block py-6 px-2 md:px-6  font-medium text-lg" id="btnDichVu">Dịch Vụ</a>
+                            <a href="#!/dich-vu" class="md:block py-6 px-2 md:px-6  font-medium text-lg"
+                                id="btnDichVu">Dịch Vụ</a>
                         </li>
                         <div
                             class="w-full top-[82px] left-[0px] fixed hidden bg-[#F1F1F1] text-gray-700 pt-2 py-20   rounded-b-xl lg:group-hover:block  grid grid-cols-2">
@@ -180,8 +181,6 @@
 
         </div>
 
-
-
         <button class="" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                 fill="currentColor" class="w-6 h-6">
                 <path fill-rule="evenodd"
@@ -190,7 +189,7 @@
             </svg>
         </button>
         <button class="" id="zaloBtn" title="Go to top">
-            <a href="https://zalo.me/818081678790"><img src="images/zalo.png" alt=""
+            <a href="https://chat.zalo.me/?phone=818081678790" target="_blank" id="linkzalo"><img src="images/zalo.png" alt=""
                     class="h-[70px] shadow-xl rounded-[100%]"></a>
         </button>
 
@@ -213,10 +212,10 @@
                         </span>
 
                         <div class="mt-4 md:flex items-baseline md:text-lg font-medium">Addresss: <a
-                                href="https://goo.gl/maps/yr6xw9rsZiHHC4bN9" class="ml-2">Japan,
+                                href="https://goo.gl/maps/yr6xw9rsZiHHC4bN9" target="_blank" class="ml-2">Japan,
                                 〒338-0002 Saitama, Chuo Ward, Shimoochiai, 6 Chome−14−7 ３０１ ３F </a></div>
                         <div class="mt-4 md:flex items-baseline md:text-lg font-medium">住所: <a
-                                href="https://goo.gl/maps/yr6xw9rsZiHHC4bN9" class="ml-2">
+                                href="https://goo.gl/maps/yr6xw9rsZiHHC4bN9" target="_blank" class="ml-2">
                                 338-0002
                                 埼玉県さいたま市中央区上落合4丁目14ー7 301号</a></div>
 
@@ -247,16 +246,11 @@
                                     href="mailto:info@dest.co.jp" class="ml-2 ">info@dest.co.jp</a></div>
 
                         </div>
-                        <!-- <div class="flex space-x-5  mt-8">
-                            <img src="images/pay-1.webp" class=" bg-gray-100 px-3 py-1 rounded-md h-[40px]"
+                        <div class="flex mt-[-30px]">
+                            <img src="images/QR.jpg" class="py-1 rounded-[10%] w-[180px] "
                                 alt="Phương thức thanh toán" />
-                            <img src="images/pay-2.webp" class=" bg-gray-100 px-3 py-1 rounded-md h-[40px]"
-                                alt="Phương thức thanh toán" />
-                            <img src="images/pay-3.webp" class=" bg-gray-100 px-3 py-1 rounded-md h-[40px]"
-                                alt="Phương thức thanh toán" />
-                            <img src="images/pay-4.webp" class=" bg-gray-100 px-3 py-1 rounded-md h-[40px]"
-                                alt="Phương thức thanh toán" />
-                        </div> -->
+
+                        </div>
                     </div>
                 </div>
         </section>
@@ -288,29 +282,29 @@
             templateUrl: 'views/tin-tuc.html',
             controller: TinTucController,
         })
-        .when('/dich-vu', {
-            templateUrl: 'views/dich-vu.html',
-            controller: DichVuController,
-        })
-        .when('/tin-tuc/tai-sao-nen-su-dung-nuoc-kiem', {
-            templateUrl: 'views/tai-sao-nen-su-dung-nuoc-kiem.html',
-            controller: TinTucController,
-        }).when('/tin-tuc/tap-doan-OSG', {
-            templateUrl: 'views/tap-doan-OSG.html',
-            controller: TinTucController,
-        }).when('/tin-tuc/hop-dong', {
-            templateUrl: 'views/hop-dong.html',
-            controller: TinTucController,
-        }).when('/tin-tuc/dasani', {
-            templateUrl: 'views/dasani.html',
-            controller: TinTucController,
-        }).when('/tin-tuc/OSG-nghe-an', {
-            templateUrl: 'views/OSG-nghe-an.html',
-            controller: TinTucController,
-        }).when('/tin-tuc/chinh-sach-bao-mat', {
-            templateUrl: 'views/chinh-sach-bao-mat.html',
-            controller: TinTucController,
-        })
+            .when('/dich-vu', {
+                templateUrl: 'views/dich-vu.html',
+                controller: DichVuController,
+            })
+            .when('/tin-tuc/tai-sao-nen-su-dung-nuoc-kiem', {
+                templateUrl: 'views/tai-sao-nen-su-dung-nuoc-kiem.html',
+                controller: TinTucController,
+            }).when('/tin-tuc/tap-doan-OSG', {
+                templateUrl: 'views/tap-doan-OSG.html',
+                controller: TinTucController,
+            }).when('/tin-tuc/hop-dong', {
+                templateUrl: 'views/hop-dong.html',
+                controller: TinTucController,
+            }).when('/tin-tuc/dasani', {
+                templateUrl: 'views/dasani.html',
+                controller: TinTucController,
+            }).when('/tin-tuc/OSG-nghe-an', {
+                templateUrl: 'views/OSG-nghe-an.html',
+                controller: TinTucController,
+            }).when('/tin-tuc/chinh-sach-bao-mat', {
+                templateUrl: 'views/chinh-sach-bao-mat.html',
+                controller: TinTucController,
+            })
             .when('/dich-vu/du-lich-kham-benh', {
                 templateUrl: 'views/du-lich-kham-benh.html',
                 controller: DichVuController,
@@ -338,7 +332,7 @@
 
     const menuIcon = document.querySelector("#menu-icon");
     const menu = document.querySelector("#menu");
-    
+
 
 
     // Event
@@ -367,19 +361,19 @@
                 menu.classList.remove("space-y-8")
             }
             window.requestAnimationFrame(scrollUp);
-            
+
         });
     });
 
     let btnDichVu = document.getElementById("btnDichVu")
-            btnDichVu.addEventListener("click", function () {
-                var dichVu = document.getElementById("dichVu");
-                if (dichVu) {
-                    dichVu.scrollIntoView({
-                        behavior: "smooth"
-                    });
-                }
+    btnDichVu.addEventListener("click", function () {
+        var dichVu = document.getElementById("dichVu");
+        if (dichVu) {
+            dichVu.scrollIntoView({
+                behavior: "smooth"
             });
+        }
+    });
 
     var zaloBtn = document.getElementById("zaloBtn");
 
@@ -395,7 +389,8 @@
     }
 
     shake();
-
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+{document.getElementById("linkzalo").href="http://zaloapp.com/qr/p/1s3g1zc9mxnsf";}
 
 
 
